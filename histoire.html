@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Candidature - Clan</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #121212;
+      color: #e0e0e0;
+      font-family: 'Permanent Marker', cursive;
+    }
+    .navbar {
+      background: #1f1f1f;
+    }
+    .navbar-brand, .nav-link {
+      color: #e0e0e0 !important;
+      font-family: 'Ninja Naruto', cursive;
+    }
+    .nav-link {
+      margin-right: 15px;
+      transition: all 0.3s ease;
+    }
+    .nav-link:hover {
+      transform: scale(1.1);
+    }
+    .footer {
+      background: #1f1f1f;
+      color: #e0e0e0;
+      text-align: center;
+      padding: 20px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    .footer p {
+      margin-bottom: 0;
+    }
+    h1, h2 {
+      font-family: 'Ninja Naruto', cursive;
+      color: #BD0000; 
+      text-shadow: 2px 2px 0px #fff;
+      margin: 20px;
+    }
+    .zone {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-align: center;
+      border-radius: 12%;
+    }
+    .zone:hover {
+      background-color: #444;
+    }
+    .modal-content {
+      background-color: #222;
+      color: #fff;
+      border: 2px solid #BD0000;
+      border-radius: 10px;
+      padding: 20px;
+    }
+    .modal-title {
+      color: #BD0000;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .modal-body {
+      display: flex;
+      align-items: center;
+    }
+    .modal-body img {
+      max-width: 500px;
+      margin-right: 20px;
+    }
+    .modal-body p {
+      font-size: 1.2rem;
+      text-align: justify;
+    }
+    .modal-dialog-custom {
+      max-width: 80%; 
+      width: 80%; 
+    }
+    /* Custom CSS for images */
+    .top-right-image {
+      position: absolute;
+      top: 80px; /* Adjusted top position */
+      right: 50px;
+      max-width: 100px; /* Adjust size as needed */
+    }
+    .left-image {
+      position: absolute;
+      top: 50%;
+      left: 100px;
+      max-width: 200px; /* Adjust size as needed */
+      transform: translateY(-50%) scale(1.5); /* Increased scale for zoom effect */
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark animate__animated animate__fadeInDown">
+    <a class="navbar-brand" href="histoire.html">HISTOIRE</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">PRESENTATION</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="objectifs.html">OBJECTIFS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="hrp.html">HRP</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="content-section" data-aos="fade-up">
+      <h2 class="text-center">L'histoire de ???? Uchiha.</h2>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="zone" onclick="toggleZone('zone1')">??? Uchiha : 8 Ans<br />D<br />E<br />R<br />O<br />U<br />L<br />E<br />Z<br /><br />I<br />C<br />I</div>
+          <div class="modal fade" id="zone1Modal" tabindex="-1" role="dialog" aria-labelledby="zone1ModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-custom" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="zone1ModalLabel">??? Uchiha à 8 ans</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img src="obito.png" class="imgBubble" alt="Image 1">
+                  <p>
+                    Il est le fils du grand commandant Jonin de Konoha : Akashi Uchiha. Son père est rarement présent pour lui, il est d'ailleurs toujours froid à son égard. Toutefois, ??? aime son père mais ne le respecte pas car il a été trop peu présent dans sa vie. 
+                    <br /> <br />A l'âge de 8 ans, ??? Uchiha rentre pour la première fois à l'Académie avec ses cousins qu'ils considèrent comme ses propres frères. Il est le cadet de ce groupe, il est impulsif et insolent malgré son potentiel et son intelligence. 
+                    <br /> <br />Après un temps à l'Académie, ??? est tombé dans une routine, entre le quotidien dans le domaine familial et ses études. Il est parvenu à se faire quelques amis mais reste toujours avec ses cousins. ??? est extraverti et sociable mais il est imbu de lui-même et prétentieux. Il ne tolère d'être auprès de ninjas qu'il juge plus faible que lui.
+                    <br /> <br />Un jour, en rentrant chez lui et enjoué de ses résultats obtenus, il montre son bulletin à sa mère adoptive, le félicitant puis à son père, qui ne prit la peine de regarder le bulletin. ???, blessé par son manque de considération, fit mine de rien devant sa mère. Malgré son assurance et sa prétention, ??? est un ninja sensible qui cherche de la considération dans le regard des autres.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="zone" onclick="toggleZone('zone2')">??? Uchiha : 10 Ans<br />D<br />E<br />R<br />O<br />U<br />L<br />E<br />Z<br /><br />I<br />C<br />I</div>
+          <div class="modal fade" id="zone2Modal" tabindex="-1" role="dialog" aria-labelledby="zone2ModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-custom" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="zone2ModalLabel">??? Uchiha à 10 ans</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img src="obito4.png" alt="Image 2">
+                  <p>À 10 ans, après un entraînement, ??? fût lourdement blessé et a dû être interné à l'hôpital de Konoha. Il dut rester quelques mois là-bas, et il developpera une immense frustration. Agacé de la situation, il en avait marre d'être grabataire, d'être considéré comme un faible, de louper autant d'entraînement... Même si son corps n'était plus en état de supporter les entrainements physiques, il décida de se cultiver intellectuellement pour y palier. Les seuls moments où sa frustration prenait du retrait étaient lorsque Yôtsujin et le fils de Kori lui rendaient visites et lui amenaient de nouveaux livres. ??? adorait lire et apprendre de nouveaux modes de pensées, de nouvelles stratégies militaires et bien d'autres. Après quelques semaines, il restait vif d'esprit et capricieux, et il profitait du soir pour sortir discrètement de l'hôpital afin de s'entraîner à l'abri des regards. Il en voudra également à son père d'être venu le voir qu'une seule fois et ainsi il comprit enfin que son père n'avait que faire lui.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="zone" onclick="toggleZone('zone3')">??? Uchiha : 12 Ans<br />D<br />E<br />R<br />O<br />U<br />L<br />E<br />Z<br /><br />I<br />C<br />I</div>
+          <div class="modal fade" id="zone3Modal" tabindex="-1" role="dialog" aria-labelledby="zone3ModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-custom" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="zone3ModalLabel">??? Uchiha à 12 ans</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img src="obito2.png" alt="Image 3">
+                  <p>
+                    <br /> <br />Ayant grandi et étant proche de son 12ème anniversaire, Yôtsujin, le fils de Kori et ??? partirent du domaine en direction de la zone d'entraînement. Tous impatients de se défier là-bas et de montrer leur dominance, qu' à peine arrivés, ils s'envoyèrent des jutsus. Après un moment, les enfants étaient épuisés. Soudain un ninja masqué approcha des jeunes ninjas et les défia. Les enfants acceptèrent. 
+                    <br /> <br />??? - "Bahahaha ! T'es un ninja toi ?? Tu crois battre les trois prodiges du clan Uchiha ?! Vas-y on va te mettre la pâtée ! Pas vrai les gars ?" 
+                    <br /> <br />Le combat était déjà fini dans les minutes qui suivirent. Les 3 jeunes Uchiha au sol cherchèrent des excuses de leur piètre performance.
+                    <br /> <br />??? - "Pfff, on était pas au meilleur de notre forme, c'est pour ça que t'as pu nous battre papi...."
+                    <br /> <br />Yôtsujin - "La prochaine fois, ce sera différent... tu verras le vieux !"
+                    <br /> <br />Ninja masqué - "J'espère bien que ce soit différent. Je suis déçu de la performance de la nouvelle génération des Uchiha. Les ninjas d'aujourd'hui ne sont plus ce qu'ils étaient..."
+                    <br /> <br />Le ninja masqué retira son masque, laissant son visage découvert. ??? reconnu immédiatement son père. Ce jour-là, il réunit ses dernières forces et partit du terrain d'entrainement. Après un temps, il décida de se poser près d'un cours d'eau. Il laissa parler ses émotions, il pleura dans un premier temps puis il fut pris d'une rage et frappa les arbres jusqu'à s'en faire saigner les mains. Il ne rentra que le lendemain chez lui.
+                  </p> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="zone" onclick="toggleZone('zone4')">??? Uchiha : 14 Ans<br />D<br />E<br />R<br />O<br />U<br />L<br />E<br />Z<br /><br />I<br />C<br />I</div>
+          <div class="modal fade" id="zone4Modal" tabindex="-1" role="dialog" aria-labelledby="zone4ModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-custom" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="zone4ModalLabel">??? Uchiha à 14 ans</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img src="obito5.png" alt="Image 2">
+                  <p>
+                    Fraîchement diplômé, ??? courut vers sa mère et Kori, il était fier de pouvoir être enfin reconnu comme un vrai ninja. Toutefois, il était déçu de ne pas voir son père lors de la cérémonie. ??? connaît la responsabilité du poste de son père mais il aurait aimé le voir présent pour cet évènement. A présent, il n'était plus déçu ou attristé car il connaissait à peine son père, c'était simplement un inconnu.
+                    <br /> <br />??? - "Maman, on peut aller dans un restaurant pour fêter ça s'il te plaît ?"
+                    <br /> <br />Sa mère - "Oui, mon bébé."
+                    <br /> <br />??? - "Maman, pas là ! C'est la honte si les autres entendent ça !"
+                    <br /> <br />Kori prit une voix ferme.
+                    <br /> <br />Kori - "Calme-toi ! On a encore le droit de te donner des surnoms."
+                    <br /> <br />??? - "Ouai mais c'est juste que je suis un grand maintenant...."
+                    <br /> <br />Kori - "On sait mais tu restes toujours un enfant à nos yeux..."
+                    <br /> <br />Ils prirent le chemin vers le restaurant Ramen Ichiraku. Arrivé là-bas, il voit son père sous l'emprise de l'alcool accompagné de Zaraki Senju. Le sang de ??? n'a fait qu'un tour. Furieux, il partit en un instant sans que, ni sa mère et ni Kori n'aient eu le temps de le calmer. 
+                    <br /> <br />Ce jour-là, il était tellement en colère qu'il ne pensait qu'à partir loin de son père. Il ne s'était pas rendu compte qu'il était parti plus loin de l'enceinte de protection couvert par Konoha.
+                  </p> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <img src="sharingan1.png" alt="Sharingan" class="top-right-image">
+  <img src="obito8.png" alt="Obito" class="left-image">
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; Uchiha, Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    function toggleZone(zoneId) {
+      $('#'+zoneId+'Modal').modal('toggle');
+    }
+  </script>
+</body>
+</html>
